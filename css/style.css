@@ -55,7 +55,7 @@ body {
     letter-spacing: 1px;
 }
 
-#list {
+/*#list {
     -moz-column-count: 2;
     -moz-column-gap: 10px;
     -webkit-column-count: 2;
@@ -65,7 +65,15 @@ body {
     list-style: none;
     font-family: 'Cabin Condensed', sans-serif;
     font-size: 1.5em;
+}**/
+
+#list {
+    list-style: none;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 1.5em;
 }
+
+
 
 /*********** WORK **********/
 .page-header {
