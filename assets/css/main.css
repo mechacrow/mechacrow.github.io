@@ -1634,8 +1634,6 @@
 
 		a:hover {
 			text-decoration: none;
-            color: #CE4F39;
-            font-size: 1.2em;
 		}
 
 	strong, b {
@@ -1671,7 +1669,11 @@
 		font-size: 1.2em;
 		line-height: 1.5em;
 	}
-
+    h3 a:hover {
+			text-decoration: none;
+            color: #CE4F39;
+            font-size: 1.2em;
+}
 	h4 {
 		font-size: 1em;
 		line-height: 1.5em;
@@ -3727,6 +3729,8 @@
 
 #bio {
     font-size: 1.3em;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
 
 /* Footer */
