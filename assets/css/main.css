@@ -1646,6 +1646,7 @@
 
 	p {
 		margin: 0 0 2em 0;
+        color: #262626;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1671,7 +1672,7 @@
 	}
     h3 a:hover {
 			text-decoration: none;
-            color: #CE4F39;
+            color: #2EC4B6;
             font-weight: bold;
 }
 	h4 {
@@ -2521,6 +2522,13 @@
 
 	section.special, article.special, header.special {
 		text-align: center;
+        
+        background: url(../../images/background-flip.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        color: #262626;
 	}
 
 	header {
@@ -2587,7 +2595,8 @@
 		}
 
 	header h2, header h3 {
-		border-bottom-color: #e3e3e3;
+		/*border-bottom-color: #e3e3e3;*/
+        color: #262626;
 	}
 
 	header p {
@@ -3009,7 +3018,8 @@
 			}
 
 			.wrapper.style2 a {
-				color: #CE4F39;
+				/*color: #CE4F39;*/
+                color: #2EC4B6;
 			}
 
 			.wrapper.style2 strong, .wrapper.style2 b {
@@ -3859,7 +3869,7 @@
 #res {
     border-style: solid;
     border-width: 1px 1px;
-    color: #CE4F39;
+    color: #2EC4B6;
     font-size: 1em;
     line-height: 1.35em;
     margin: 0 auto 1em;
