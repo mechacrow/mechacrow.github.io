@@ -1657,7 +1657,8 @@
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
+			/*color: inherit;*/
+            color: #262626;
 			text-decoration: none;
 		}
 
@@ -3513,6 +3514,10 @@
 
 		}
 
+/*****************************************************
+                BANNER / HEADER
+******************************************************/
+
 /* Banner */
 
 	/*#banner {
@@ -3738,9 +3743,23 @@
 /* About */
 
 #bio {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.5;
     letter-spacing: 1px;
+}
+
+#portimg {
+    width: 225px;
+    height: 175px;
+    margin: 0 auto;
+    border: 2px solid #262626;
+    border-radius: 50%;
+    
+}
+
+#train {
+    color: #CE4F39;
+    font-weight: bold;
 }
 
 /* Footer */
