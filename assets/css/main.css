@@ -2530,6 +2530,7 @@
         -o-background-size: cover;
         background-size: cover;
         color: #262626;
+        max-width: 100%;
 	}
 
 	header {
@@ -3535,6 +3536,7 @@
     background-size: cover;
     color: #262626;
     text-align: center;
+    max-width: 100%;
 }
 
 		#banner input, #banner select, #banner textarea {
