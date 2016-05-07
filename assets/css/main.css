@@ -2524,13 +2524,13 @@
 	section.special, article.special, header.special {
 		text-align: center;
         
-        background: url(../../images/background-flip.png) no-repeat center center fixed;
+        background-color: rgba(59, 76, 89, 1);
+        /**background: url(../../images/background-flip-copy.png) no-repeat center center fixed; **/
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
         color: #262626;
-        max-width: 100%;
 	}
 
 	header {
@@ -3528,15 +3528,19 @@
 		text-align: center;
 	}*/
 
-#banner { 
-    background: url(../../images/background-flip.png) no-repeat center center fixed; 
+#banner {    
+    background: url(../../images/background-flip-copy.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     color: #262626;
     text-align: center;
-    max-width: 100%;
+    
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100vh;
 }
 
 		#banner input, #banner select, #banner textarea {
@@ -3670,17 +3674,17 @@
 
 		@media screen and (max-width: 1680px) {
 
-			#banner {
+		#banner {
 				padding: 8em 0 14em 0;
-			}
+			} 
 
-		}
+		} 
 
 		@media screen and (max-width: 1280px) {
 
-			#banner {
+		/**	#banner {
 				padding: 6em 0 4em 0;
-			}
+			} **/
 
 				#banner h2 {
 					width: 50%;
@@ -3690,9 +3694,9 @@
 
 		@media screen and (max-width: 980px) {
 
-			#banner {
+		/**	#banner {
 				padding: 4em 2em 2em 2em;
-			}
+			} **/
 
 				#banner h2 {
 					width: 75%;
@@ -3702,9 +3706,10 @@
 
 		@media screen and (max-width: 736px) {
 
-			#banner {
-				padding: 3em 1.5em 1em 1.5em;
-			}
+			/**#banner {
+				/**padding: 3em 1.5em 1em 1.5em;**
+                padding: 18em 1.5em 1em 1.5em;
+			} **/
 
 				#banner h2 {
 					font-size: 2em;
@@ -3718,9 +3723,11 @@
 
 		@media screen and (max-width: 480px) {
 
-			#banner {
-				padding: 3em 1em 1em 1em;
-			}
+		/*	#banner {
+				/**padding: 3em 1em 1em 1em;**
+                /**padding: 20em 1em 1em 1em;**
+                width: 100%; height: 100%; margin: 0; padding; 0;
+			} **/
 
 				#banner h2 {
 					font-size: 1.65em;
@@ -3742,9 +3749,41 @@
 			}
 
 		}
-/* About */
+
+
+/***** DOWN ARROW ******/
+
+#downarrow {
+    padding-top: 13%;
+    padding-right: 1.8em;
+    margin: 0 auto;
+    width: 150px;
+    height: 10px;
+  
+}
+
+
+/**********************************************************
+                          ABOUT 
+************************************************************/
+
+#three {
+    background-color: rgba(0,0,0,0.7);
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 3px 3px;
+    -moz-background-size: 3px 3px;
+    background-size: 3px 3px;
+  }
+
+#content {
+    color: white;
+}
 
 #bio {
+    color: white;
     font-size: 1.2em;
     line-height: 1.5;
     letter-spacing: 1px;
@@ -3752,16 +3791,43 @@
 
 #portimg {
     width: 225px;
-    height: 175px;
+    height: 225px;
     margin: 0 auto;
     border: 2px solid #262626;
-    border-radius: 50%;
-    
+    border-radius: 50%;   
+}
+
+@media screen and (max-width: 480px) {
+
+			#portimg {
+                width: 125px;
+                height: 125px;
+                margin: 0 auto;
+                border: 2px solid #262626;
+                border-radius: 50%;
+    }
+		}
+
+#skills {
+    color: white;
 }
 
 #train {
     color: #CE4F39;
     font-weight: bold;
+}
+/*************** WORK / PROJECTS ****************/
+
+#worktitle {
+    font-weight: bold;
+}
+
+#workinfo {
+    color: white;
+}
+
+#hov:hover {
+    border: 4px solid #2EC4B6;
 }
 
 /* Footer */
@@ -3884,7 +3950,6 @@
 
 		}
 
-/******** Custom CSS *********/
 
 /**RESUME**/
 #res {
@@ -3902,4 +3967,14 @@
 #res:hover {
     border-width: 3px 3px;
     font-weight: bold;
+}
+
+#social {
+    padding-top: 10%;
+}
+#quote {
+    color: #262626;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: lowercase;
 }
