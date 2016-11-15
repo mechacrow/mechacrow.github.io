@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=VT323|Yellowtail');
+
+html {
+    background: #2de3ed;
+    background: -moz-linear-gradient(top,  #2de3ed 0%, #f26fe7 19%, #f26fe7 32%, #2de3ed 48%, #f26fe7 65%, #f26fe7 82%, #2de3ed 100%);
+    background: -webkit-linear-gradient(top,  #2de3ed 0%,#f26fe7 19%,#f26fe7 32%,#2de3ed 48%,#f26fe7 65%,#f26fe7 82%,#2de3ed 100%);
+    background: linear-gradient(to bottom,  #2de3ed 0%,#f26fe7 19%,#f26fe7 32%,#2de3ed 48%,#f26fe7 65%,#f26fe7 82%,#2de3ed 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2de3ed', endColorstr='#2de3ed',GradientType=0 );
+    z-index: 0;
+}
+
 /** Full Page Landing
 –––––––––––––––––––––––––––––––––––––––––––––––––– **/
 
 header {
     height: 100vh;
-    background-image: url(/img/background-big.png);
     background-size: cover;
     background-position: center;
     display: -webkit-box;
@@ -21,9 +31,11 @@ header {
     justify-content: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
-    -ms-flex-align: center;
+    -ms-flex-align: center; 
     align-items: center;
     text-align: center;
+    
+    font-family: 'VT323', monospace;
 }
 
 #main-head {
@@ -34,6 +46,8 @@ header {
 #second-head {
     margin-top: 1em;
     margin-bottom: 4em;
+    
+    font-family: 'Yellowtail', cursive;
 }
 
 #down-arrow {
@@ -45,15 +59,20 @@ header {
 
 #work {
     color: white;
-    background-color: #262626;
     text-align: center;
+    font-family: 'VT323', monospace;
 }
 
 #work-title {
-    border-bottom: 1px solid white;
+    padding-bottom: 30px;
+    font-size: 4.5em;
+}
+/*
+#work-title {
+    border-bottom: 1px solid #262626;
     width: 50%;
     padding: 3% 0 0 0;
-}
+}*/
 
 @media (max-width: 400px) {
     #work-title {
@@ -123,6 +142,8 @@ figure {
 figcaption {
     margin-top: 15px;
     color: white;
+    
+    font-size: 1.1em;
 }
 
 #img-grid img {
@@ -148,16 +169,6 @@ figcaption {
 
 /** About
 –––––––––––––––––––––––––––––––––––––––––––––––––– **/
-#about {
-    background-color: rgba(0,0,0,0.7);
-    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-    -webkit-background-size: 3px 3px;
-    -moz-background-size: 3px 3px;
-    background-size: 3px 3px;
-}
 
 #port-img {
     float: right;
@@ -208,21 +219,35 @@ figcaption {
 }
 
 #about-header {
-    color: white;
+    color: #2DE3ED;
     text-align: left;
-    margin-top: 5%
+    margin-top: 5%;
+    font-size: 4.5em;
+        
+    font-family: 'VT323', monospace;
 }
 
 #bio {
     color: white;
-    font-size: 1.1em;
     letter-spacing: 1px;
     text-align: left;
+    
+    font-family: 'VT323', monospace;
+    font-size: 1.3em;
+}
+ 
+#bio a {
+    text-decoration: none;
+    color: #F26FE7;
+}
+
+#bio a:hover {
+    color: pink;
 }
 
 #skills-list {
-    color: white;
-    font-size: 1em;
+    color: #2DE3ED;
+    font-size: 1.3em;
     text-align: left;
     list-style-type: none;
     letter-spacing: 1px;
@@ -234,10 +259,12 @@ figcaption {
     position: relative;
     border-top: solid 1px;
     padding: 0.5em 0;
+    
+    font-family: 'VT323', monospace;
 }
 @media (max-width: 400px) {
     #skills-list {
-        font-size: 0.88em;
+        font-size: 1.2em;
     }
 }
 
@@ -249,24 +276,21 @@ figcaption {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(/img/stardust.png) repeat;
-    /**background: url(/img/stardust.png) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover; **/
 }
 
 #learn-header {
     text-align: center;
     padding: 3%;
+    
+    font-size: 4.5em;
+    font-family: 'VT323', monospace;
 }
 
 /** Code A **/
 
 #code-img {
-    height: 160px;
-    width: 300px;
+    height: 140px;
+    width: 280px;
     display: block;
     margin: 0 auto;
 }
@@ -279,17 +303,19 @@ figcaption {
 
 #code-a {
     letter-spacing: 1px;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.5);
     width: 60%;
     padding: 5% 5% 2%;
     margin: 0 auto;
+    
+    font-family: 'VT323', monospace;
 }
 
 /** udemy **/
 
 #udemy-img {
-    height: 100px;
-    width: 250px;
+    height: 80px;
+    width: 210px;
     display: block;
     margin: 0 auto;
 }
@@ -302,17 +328,19 @@ figcaption {
 
 #udemy {
     letter-spacing: 1px;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.5);
     width: 60%;
     padding: 5% 5% 2%;
     margin: 0 auto;
+    
+    font-family: 'VT323', monospace;
 }
 
 /** treehouse **/
 
 #treehouse-img {
-    height: 150px;
-    width: 300px;
+    height: 120px;
+    width: 280px;
     display: block;
     margin: 0 auto;
 }
@@ -325,23 +353,28 @@ figcaption {
 
 #treehouse {
     letter-spacing: 1px;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.5);
     width: 60%;
     padding: 5% 5% 2%;
     margin: 0 auto;
+    
+    font-family: 'VT323', monospace;
 }
 
 /** Supplemental Material **/
 
 #sm {
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.5);
     max-width: 60%;
     padding: 5% 5% 2%;
     margin: 0 auto 5% auto;
+    
+    font-family: 'VT323', monospace;
 }
 
 #sm-header {
     color: #262626;
+    text-align: center;
     letter-spacing: 1px;
     width: 60%;
     margin: 0 auto;
@@ -387,29 +420,6 @@ figcaption {
     color: rgba(0,0,0,0.5);
     text-decoration: none;
 }
-
-/**
-
-#sm-links {
-    color: #262626;
-    text-align: left;
-    list-style-type: circle;
-}
-#sm-links li{
-    display: ;
-    padding: ;
-}
-
-#sm-links a{
-    color: #262626;
-    text-decoration: none;
-}
-#sm-links a:hover{
-    color: rgba(0,0,0,0.5);
-    text-decoration: none;
-}
-
-**/
 
 /** list style **/
 
@@ -457,6 +467,8 @@ span {
     text-align: center;
     float: left; 
     padding: 0 1% 0 0;
+    
+    font-family: 'VT323', monospace;
 }
 
 #contact-links li{
@@ -478,12 +490,14 @@ span {
 }
 
 #top-page {
-    font-size: 1.1em;
+    font-size: 1.3em;
     float: right;
     margin-top: 0.5em;
     padding: 1%;
     border: 2px solid #262626;
     border-radius: 50px 50px 50px 1px;
+    
+    font-family: 'VT323', monospace;
 }
 
 #top-page a {
