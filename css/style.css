@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=VT323|Yellowtail');
 
 html {
-    background: #2de3ed;
+    /*background: #2de3ed;
     background: -moz-linear-gradient(top,  #2de3ed 0%, #f26fe7 19%, #f26fe7 32%, #2de3ed 48%, #f26fe7 65%, #f26fe7 82%, #2de3ed 100%);
     background: -webkit-linear-gradient(top,  #2de3ed 0%,#f26fe7 19%,#f26fe7 32%,#2de3ed 48%,#f26fe7 65%,#f26fe7 82%,#2de3ed 100%);
     background: linear-gradient(to bottom,  #2de3ed 0%,#f26fe7 19%,#f26fe7 32%,#2de3ed 48%,#f26fe7 65%,#f26fe7 82%,#2de3ed 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2de3ed', endColorstr='#2de3ed',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2de3ed', endColorstr='#2de3ed',GradientType=0 );*/
+    
+    background: #67d0ed; /* Old browsers */
+    background: -moz-linear-gradient(top,  #67d0ed 1%, #74bbf1 3%, #9692f3 7%, #b368f6 11%, #c054f8 15%, #d03ef9 21%, #cf3ff9 28%, #f214fd 35%, #ff00fe 44%, #ff00fe 52%, #f214fd 60%, #cf3ff9 65%, #d03ef9 71%, #c054f8 78%, #b368f6 84%, #9692f3 90%, #74bbf1 95%, #67d0ed 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #67d0ed 1%,#74bbf1 3%,#9692f3 7%,#b368f6 11%,#c054f8 15%,#d03ef9 21%,#cf3ff9 28%,#f214fd 35%,#ff00fe 44%,#ff00fe 52%,#f214fd 60%,#cf3ff9 65%,#d03ef9 71%,#c054f8 78%,#b368f6 84%,#9692f3 90%,#74bbf1 95%,#67d0ed 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #67d0ed 1%,#74bbf1 3%,#9692f3 7%,#b368f6 11%,#c054f8 15%,#d03ef9 21%,#cf3ff9 28%,#f214fd 35%,#ff00fe 44%,#ff00fe 52%,#f214fd 60%,#cf3ff9 65%,#d03ef9 71%,#c054f8 78%,#b368f6 84%,#9692f3 90%,#74bbf1 95%,#67d0ed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67d0ed', endColorstr='#67d0ed',GradientType=0 ); /* IE6-9 */
     z-index: 0;
 }
 
@@ -38,6 +44,17 @@ header {
     font-family: 'VT323', monospace;
 }
 
+#logo {
+    height: 500px;
+    margin-bottom: 12%;
+}
+
+@media (max-width: 750px) {
+    #logo {
+        height: 300px;
+    }
+}
+
 #main-head {
     letter-spacing: 1px;
     border: 1px solid black;
@@ -54,6 +71,7 @@ header {
     padding-top: 3em;
 }
 
+
 /** Work
 –––––––––––––––––––––––––––––––––––––––––––––––––– **/
 
@@ -66,6 +84,9 @@ header {
 #work-title {
     padding-bottom: 30px;
     font-size: 4.5em;
+    
+    text-shadow: 2px 2px 5px #262626;
+    letter-spacing: -4px;
 }
 /*
 #work-title {
@@ -144,6 +165,7 @@ figcaption {
     color: white;
     
     font-size: 1.1em;
+    text-shadow: 2px 2px 5px #262626;
 }
 
 #img-grid img {
@@ -225,6 +247,8 @@ figcaption {
     font-size: 4.5em;
         
     font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 5px #262626;
+    letter-spacing: -4px;
 }
 
 #bio {
@@ -234,16 +258,30 @@ figcaption {
     
     font-family: 'VT323', monospace;
     font-size: 1.3em;
+    text-shadow: 2px 2px 5px #262626;
 }
  
 #bio a {
     text-decoration: none;
     color: #F26FE7;
+    
+    animation-duration: 400ms;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+@keyframes blink {
+   from {
+    color: #F26FE7;
+   }
+   to {
+    color: #2DE3ED;
+   }
+ }
 
-#bio a:hover {
+/**#bio a:hover {
     color: pink;
-}
+}**/
 
 #skills-list {
     color: #2DE3ED;
@@ -261,6 +299,7 @@ figcaption {
     padding: 0.5em 0;
     
     font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 5px #262626;
 }
 @media (max-width: 400px) {
     #skills-list {
@@ -284,6 +323,8 @@ figcaption {
     
     font-size: 4.5em;
     font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 5px #262626;
+    letter-spacing: -4px;
 }
 
 /** Code A **/
@@ -311,6 +352,12 @@ figcaption {
     font-family: 'VT323', monospace;
 }
 
+@media (max-width: 550px){
+    #code-a {
+        width: 80%;
+    }
+}
+
 /** udemy **/
 
 #udemy-img {
@@ -334,6 +381,11 @@ figcaption {
     margin: 0 auto;
     
     font-family: 'VT323', monospace;
+}
+@media (max-width: 550px){
+    #udemy {
+        width: 80%;
+    }
 }
 
 /** treehouse **/
@@ -360,17 +412,28 @@ figcaption {
     
     font-family: 'VT323', monospace;
 }
+@media (max-width: 550px){
+    #treehouse {
+        width: 80%;
+    }
+}
 
 /** Supplemental Material **/
 
 #sm {
     background-color: rgba(255,255,255,0.5);
-    max-width: 60%;
+    width: 60%;
     padding: 5% 5% 2%;
     margin: 0 auto 5% auto;
     
     font-family: 'VT323', monospace;
 }
+@media (max-width: 550px){
+    #sm {
+        width: 80%;
+    }
+}
+
 
 #sm-header {
     color: #262626;
@@ -396,6 +459,18 @@ figcaption {
     #youtube-img {
         height: 100px;
         width: 140px;
+    }
+}
+
+#code-camp {
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+    #code-camp {
+        height: 75px;
     }
 }
 
@@ -519,4 +594,70 @@ span {
 
 
 
+/* pop up */
+.modal-box {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 98%;
+  background: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+}
 
+.modal-box header,
+.modal-box .modal-header {
+  padding: 1.25em 1.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-box header h3,
+.modal-box header h4,
+.modal-box .modal-header h3,
+.modal-box .modal-header h4 { margin: 0; }
+
+.modal-box .modal-body { padding: 2em 1.5em; }
+
+.modal-box footer,
+.modal-box .modal-footer {
+  padding: 1em;
+  border-top: 1px solid #ddd;
+  background: rgba(0, 0, 0, 0.02);
+  text-align: right;
+}
+
+.modal-overlay {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+a.close {
+  line-height: 1;
+  font-size: 1.5em;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  text-decoration: none;
+  color: #bbb;
+}
+
+a.close:hover {
+  color: #222;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+@media (min-width: 32em) {
+  .modal-box { width: 70%; }
+}
