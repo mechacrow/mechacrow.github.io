@@ -166,6 +166,7 @@ figcaption {
     
     font-size: 1.1em;
     text-shadow: 2px 2px 5px #262626;
+    line-height: 1.3;
 }
 
 #img-grid img {
@@ -244,11 +245,11 @@ figcaption {
     color: #2DE3ED;
     text-align: left;
     margin-top: 5%;
-    font-size: 4.5em;
+    font-size: 4.2em;
         
     font-family: 'VT323', monospace;
     text-shadow: 2px 2px 5px #262626;
-    letter-spacing: -4px;
+    letter-spacing: -2px;
 }
 
 #bio {
@@ -296,7 +297,7 @@ figcaption {
     width: 60%;
     position: relative;
     border-top: solid 1px;
-    padding: 0.5em 0;
+    padding: 0.2em 0;
     
     font-family: 'VT323', monospace;
     text-shadow: 2px 2px 5px #262626;
@@ -508,7 +509,7 @@ figcaption {
     position: relative;
     border-bottom: solid 1px #262626;
     margin: 0 0 20px 0;
-    padding: 0.7em 0;
+    padding: 0.1em 0;
 }
 #learn-list a{
     color: #262626;
