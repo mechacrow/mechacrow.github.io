@@ -64,7 +64,13 @@ html {
 
 .mySlides {
     display: none;
-    padding-left: 18% !important;
+    padding-left: 18%;
+}
+
+@media (max-width: 500px) {
+    .mySlides {
+        padding: 0;
+    }
 }
 
 .mySlides img {
