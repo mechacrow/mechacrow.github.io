@@ -1,0 +1,110 @@
+html {
+    background-color: #eeeeee;
+}
+
+.name {
+    color: ;
+    margin-top: 5%;
+    padding-left: 1%;
+    font-weight: 900;
+}
+
+.img-gal {
+    padding-left: 1%;
+}
+
+#bio {
+    color: #373737;
+    font-family: monospace;
+    padding-left: 1%;
+    width: 16em;
+}
+
+#job {
+    color: #2dbab4;
+    font-style: italic;
+}
+
+#job a {
+    color: #ff8ea0;
+    text-decoration: none;
+}
+
+#skills {
+    color: #373737;
+    font-family: monospace;
+    padding-left: 1%;
+}
+
+#skills li {
+    font-size: 0.80em;
+}
+
+#social-icons {
+    font-size: 1.5em;
+    letter-spacing: 8px;
+    margin-top: -16px;
+    padding-left: 1%;
+}
+
+#social-icons a{
+    color: #373737;
+}
+
+#social-icons a:hover {
+    color: #ff8ea0;
+}
+
+
+/*** img gal ***/
+
+* {
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    border: 6px solid #ff8ea0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
