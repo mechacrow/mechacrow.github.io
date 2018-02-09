@@ -64,6 +64,7 @@ html {
 
 .mySlides {
     display: none;
+    padding-left: 20%;
 }
 
 .mySlides img {
