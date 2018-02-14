@@ -32,7 +32,7 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div>
+  <div id="full-page">
       <h3 class="name">Jake Garratt.</h3>
 
   <!-- Img Gal
@@ -44,15 +44,19 @@
    <div class="slideshow-container">
 
     <div class="mySlides fade">
-      <img src="images/slide1.jpg" style="width:200px">
+      <img src="images/slide1.jpg" style="width:200px; height: 200px;">
     </div>
 
     <div class="mySlides fade">
-      <img src="images/slide2.jpg" style="width:200px">
+      <img src="images/slide-X.gif" style="width:200px; height: 200px;">
     </div>
 
     <div class="mySlides fade">
-      <img src="images/slide3.jpeg" style="width:200px">
+      <img src="images/slide2.jpg" style="width:200px; height: 200px;">
+    </div>
+       
+    <div class="mySlides fade">
+      <img src="images/slide-X-2.gif" style="width:200px; height: 200px;">
     </div>
 
     </div>
@@ -115,11 +119,11 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 50000); // Change image every 60 seconds
+    setTimeout(showSlides, 30000); // Change image every 50 seconds
 }
 </script>    
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>$(document).ready(function(){$("body").hide().fadeIn(2000);});</script>
+<script>$(document).ready(function(){$("body").hide().fadeIn(1000);});</script>
 </body>
 </html>

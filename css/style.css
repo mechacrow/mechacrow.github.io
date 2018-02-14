@@ -2,6 +2,10 @@ html {
     background-color: #eeeeee;
 }
 
+#full-page {
+    position: absolute;
+}
+
 .name {
     color: ;
     margin-top: 5%;
@@ -67,7 +71,19 @@ html {
     padding-left: 18%;
 }
 
+@media (max-width: 300px) {
+    .mySlides {
+        padding: 0;
+    }
+}
+
 @media (max-width: 500px) {
+    .mySlides {
+        padding: 0;
+    }
+}
+
+@media (max-width: 750px) {
     .mySlides {
         padding: 0;
     }
